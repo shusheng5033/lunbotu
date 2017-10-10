@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/index.js"></script>
+    <style>
+        .phone {
+            width: 100%;
+        }
+        .banner {
+            width: 100%;
+            position:relative;
+            overflow: hidden;
+        }
+        .bannerImg {
+            width: 500%;
+            position:relative;
+        }
+        .bannerImg > li {
+            width: 20%;
+            float: left;
+        }
+        .bannerImg > li img {
+            width: 100%;
+            display: block;
+        }
+        .bannerDian {
+            position:absolute;
+            bottom:5px;
+            left:50%;
+            width: 90px;
+            height: 10px;
+            transform:translateX(-50%);
+        }
+        .bannerDian>li {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border:1px solid #fff;
+            float: left;
+            margin-left:10px;
+        }
+        .bannerDian > li:first-of-type {
+            margin-left: 0;
+        }
+        .bannerDian > li.active {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="phone">
+    <div class="banner">
+        <ul class="bannerImg clearfix">
+            <li>
+                <a href="javascript:;">
+                    <img src="images/1.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/2.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/3.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/4.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="images/5.jpg" alt=""/>
+                </a>
+            </li>
+        </ul>
+        <ul class="bannerDian">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
